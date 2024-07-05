@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ETIQUETAS META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Claro, telecomunicaciones, evento de musica, Claro music fest, Claro verde, telefonia">
+    <meta name="description" content="Sitio web sobre el evento de musica Claro music fest y su campaña Claro verde, presentado como Trabajo Practico Obligatorio grupal para la asignatura de Diseño y Desarrollo Web">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Spanish">
+    
+    <!-- ETIQUETAS LINK -->
+    <link rel="stylesheet" href="estilos_web.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="Imagenes/Header/Claro.svg.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/23520c328a.js" crossorigin="anonymous"></script>
+
+    <title>Claro Music Fest</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav_container">
+
+                <h1 class="nav_logo">Claro</h1>
+
+                <label for="menu_1" class="nav_label">
+                    <img src="Imagenes/Header/Menu/Menu.svg" alt="Ícono de menú" class="nav_img">
+                </label>
+
+                <input type="checkbox" id="menu_1" class="nav_input">
+
+                <div class="nav_menu">
+                    <a href="index.html" class="nav_item">Home</a>
+                    <a href="sponsors.html" class="nav_item">Sponsors</a>
+                    <a href="claro_verde.html" class="nav_item">Claro Verde</a>
+                    <a href="registro.html" class="nav_item"><span class="resaltado">Registrate</span></a>
+                </div>
+            </div>
+
+        </nav>
+     
+    </header>
+
+
+    <section id="principal_registro">
+        
+        <div class="contenedor_padre">
+            <div class="contenedor_formulario">
+                <h3>¡Apúntate al Claro Music Fest 2023!</h3>
+                <br>
+                <form action="envio.php" method="post" class="contacto">
+                    <div>
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo">
+                    </div>
+                    <div>
+                        <label for="edad">Edad</label>
+                        <input type="text" name="edad" id="edad" placeholder="Escribe tu edad">
+                    </div>
+                    <div>
+                        <label for="dni">D.N.I.</label>
+                        <input type="text" name="dni" id="dni" placeholder="Escribe tu número de DNI o Documento">
+                    </div>
+                    
+                    <div>
+                        <label for="email">E-Mail.</label>
+                        <input type="email" name="email" id="email" placeholder="Escribe tu dirección de correo electrónico">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+
+        <div class="barra_roja">
+            <h3>Información Institucional</h3>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <div class="contenedor_padre">
+            <div>
+                <address>
+                    <h5>Creado por: </h5>
+                    <br>
+                    <p>- Andrés Felipe Méndez Florez</p>
+                    <p>- Tec. en Desarrollo de Software</p>
+                    <p>- Facultad de Ingeniería y Ciencias Exactas</p>
+                    <p>- Presentado el 22/11/2023</p>
+                    <p>- Profesor: David Ernesto Ayala Velarde</p>
+                </address>
+
+            </div>
+
+            <div id="logo_uade">
+                <img src="Imagenes/footer/UADE.png" alt="Logo de la universidad UADE">
+                
+            </div>
+
+            <div id="redes_sociales">
+                <a href="https://www.facebook.com/events/d41d8cd9/claro-music-fest/3165740143533313/" target="_blank">
+                    <figure>
+                        <img src="Imagenes/Redes Sociales/facebook_logo.svg" alt="Logotipo de facebook que sirve como link a esa pagina">
+                    </figure>
+                </a>
+
+                <a href="https://www.instagram.com/claromusica/?hl=es" target="_blank">
+                    <figure>
+                        <img src="Imagenes/Redes Sociales/instagram_logo.svg" alt="Logotipo de instagram que sirve como link a esa pagina">
+                    </figure>
+                </a>
+
+                <a href="https://twitter.com/ClaromusicaAR" target="_blank">
+                    <figure>
+                        <img src="Imagenes/Redes Sociales/x-twitter_logo.svg" alt="Logotipo de X (anteriormente twitter) que sirve como link a esa pagina">
+                    </figure>
+                </a>
+
+                <a href="https://www.youtube.com/@claroargentina" target="_blank">
+                    <figure>
+                        <img src="Imagenes/Redes Sociales/youtube.svg" alt="Logotipo de youtube que sirve como link a esa pagina">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body> 
+</html>

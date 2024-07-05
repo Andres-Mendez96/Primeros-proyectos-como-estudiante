@@ -1,0 +1,882 @@
+:root{
+    --cafeOscuro: #8C5954;
+    --cafeClaro: #BF8F73;
+    --amarilloCrema: #F2C185;
+    --amarilloPalido: #F2EBD5;
+    --negro: #000000;
+
+}
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    font-family: 'Lora', serif;
+    
+}
+
+body{
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+.resaltado{
+    color: #00E648;
+    font-weight: 900;
+}
+
+/* ESTILOS DEL HEADER */
+.contenedor_header{
+    background-color: red;
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav_input:checked + .nav_menu{
+    background: tomato;
+}
+
+.nav{
+    background: red;
+    height: 80px;
+    width: 100%;
+    color: white;
+}
+
+.nav_container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_container h1{
+    font-size: 50px;
+}
+
+.nav_logo{
+    font-size: 1.5em;
+    font-weight: 900;
+    
+}
+
+.nav_label, .nav_input{
+    display: none;
+}
+
+.nav_menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.nav_item{
+    color: white;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    
+}
+
+.nav_item:after{
+    content: "";
+    display: block;
+    background: white;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path 0.3s;
+}
+
+.nav_item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+#logo{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* FIN DE LOS ESTILOS DEL HEADER */
+
+/* ESTILOS DE LA VIDRIERA */
+#vidriera{
+    background-image: url(Imagenes/index/Vidriera/vidriera_background.jpg);
+    min-height: 1700px;
+    background-size: cover; /* Con esto la imagen cubre todo el ancho de la pagina */
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: var(--amarilloPalido);
+    aspect-ratio: cover;
+    
+}
+
+
+#vidriera h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 80px;
+    width: 300px;
+    text-shadow: #3B3440 3px 3px 5px;
+    text-align: left;
+    -webkit-transform: rotate(-25deg);
+}
+
+#vidriera span{
+    background-color: rgba(241, 13, 13, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#vidriera p{
+    font-size: 30px;
+    padding: 26px 30px 0;
+    text-shadow: #3B3440 3px 3px 5px;
+}
+
+.resaltado_amarillo {
+    color: yellow;
+}
+
+.resaltado_azul {
+    color: blue;
+}
+
+.resaltado_rojo {
+    color: red;
+}
+/* FIN DE LOS ESTILOS DE LA VIDRIERA */
+
+/* ESTILOS DEL NEWSLETTER */
+#newsletter .contenedor{
+    background-color: red;
+    min-height: 3.5em;
+    border-top: red solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+
+#newsletter .contenedor h3{
+    color: white;
+}
+
+
+/* ------------------------------------- */
+
+
+/* ESTILOS DE LA SECCIÓN DE PRINCIPAL */
+
+
+#principal img{
+    width: 15em;
+    border-radius: 10px;
+}
+
+
+#principal h4{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+#principal .contenedor_padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#principal .contenedor_hijo{
+    margin: 10px 10px;
+    height: 300px;
+    width: 400px;
+    
+}
+
+#principal .contenedor_hijo img{
+    height: 240px;
+
+}
+
+#principal div[name="barra_claroVerde"]{
+    background-color: #11787e;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+#principal div[name="imagen_claroVerde"]{
+    height: 60px;
+    width: 60px;
+    background-image: url(Imagenes/index/Claro\ verde.png);
+}
+
+#principal .contenedor_imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+
+#principal .barra_roja{
+    background-color: red;
+    min-height: 3.5em;
+    border-top: red solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+#principal .barra_roja h3{
+    color: white;
+}
+
+
+
+
+/*----------------- ESTILOS DEL FOOTER -----------------*/
+footer{
+    background-color: white;
+        
+}
+
+#redes_sociales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#redes_sociales img{
+    height: 2em;
+    width: 2em;
+    margin: 0 5px;
+}
+
+footer .contenedor_padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo_uade{
+    width: 250px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+#logo_uade img{
+    width: 100%;
+    height: 100%;
+}
+
+/* footer{
+    background-color: white;
+        
+}
+
+#redes_sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0px;
+}
+
+#redes_sociales img{
+    height: 2em;
+    width: 2em;
+    margin: 0 5px;
+} */
+
+
+/*---------- FIN DE LOS ESTILOS DEL INDEX---------*/
+
+
+/* ESTILOS SECCION SPONSORS */
+#principal_sponsors img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+#principal_sponsors h4{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+#principal_sponsors .contenedor_padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+#principal_sponsors .contenedor_hijo{
+    margin: 10px 10px;
+    height: 300px;
+    width: 400px;
+    
+}
+
+#principal_sponsors .contenedor_padre2{
+    background-color: black;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#principal_sponsors h2{
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#principal_sponsors .subcontenedor2_padre2{
+    width: 361px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#principal_sponsors .subcontenedor2_padre2 p{
+    color: white;
+    text-align: center;
+}
+
+#principal_sponsors .subcontenedor2_padre2 h5{
+    color: red;
+    text-align: center;
+}
+
+#principal_sponsors .barra_roja{
+    background-color: red;
+    min-height: 3.5em;
+    border-top: red solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px 0px;
+    
+}
+
+#principal_sponsors .barra_roja h3{
+    color: white;
+    font-family: 'Lora',sans-serif;
+}
+
+#principal_sponsors .contenedor_padre3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+#principal_sponsors .subcontenedor2_padre3{
+    margin: 20px 50px;
+}
+
+
+/* FIN DE LOS ESTILOS DE SPONSORS */
+
+
+
+
+/* ESTILOS SECCIÓN CLARO VERDE */
+#header_claro_verde .nav{
+    background: #117882;
+    height: 80px;
+    width: 100%;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#header_claro_verde .nav h1{
+    color: #07E052;
+}
+
+#principal_claro_verde img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+#principal_claro_verde h4{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+#principal_claro_verde .contenedor_padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+#principal_claro_verde .contenedor_hijo{
+    margin: 10px 0px;
+    width: 700px;
+    
+}
+
+#principal_claro_verde .barra_verde{
+    background-color: #117882;
+    min-height: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px 0px;
+}
+
+#principal_claro_verde .contenedor_padre3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#principal_claro_verde .subcontenedor_padre3{
+    width: 400px;
+    height: 280px;
+}
+
+#principal_claro_verde .subcontenedor2_padre3{
+    width: 400px;
+    
+}
+
+#principal_claro_verde p[name="mas_informacion"]{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#principal_claro_verde .barra_verde h3{
+    color: white;
+}
+
+/* FIN DE LOS ESTILOS DE CLARO VERDE */
+
+
+
+
+/* ESTILOS SECCIÓN CLARO VERDE 2 */
+
+
+#principal_claro_verde_2 .contenedor_padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding: 0 50px;
+}
+
+#principal_claro_verde_2 .contenedor_padre img{
+    width: 100%;
+}
+
+#principal_claro_verde_2 .contenedor_padre2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#principal_claro_verde_2 .subcontenedor_padre2{
+    width: 300px;
+}
+
+
+#principal_claro_verde_2 .subcontenedor2_padre2{
+    width: 400px;
+    height: 300px;
+}
+
+#principal_claro_verde_2 .subcontenedor2_padre2 img{
+    width: 100%;
+    height: 100%;
+}
+
+#principal_claro_verde_2 .barra_verde{
+    background-color: #117882;
+    min-height: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px 0px;
+}
+
+#principal_claro_verde_2 .contenedor_padre3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#principal_claro_verde_2 .subcontenedor_padre3{
+    width: 400px;
+    height: 300px;
+}
+
+#principal_claro_verde_2 .subcontenedor_padre3 img{
+    width: 100%;
+    height: 100%;
+}
+
+#principal_claro_verde_2 .subcontenedor2_padre3{
+    padding: 0 100px;
+    margin: 20px 0;
+}
+
+#principal_claro_verde_2 .subcontenedor2_padre3 h4{
+    text-align: center;
+}
+
+#principal_claro_verde_2 .contenedor_padre4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#principal_claro_verde_2 .subcontenedor_padre4{
+    width: 400px;
+    height: 300px;
+}
+
+#principal_claro_verde_2 .subcontenedor_padre4 img{
+    width: 100%;
+    height: 100%;
+}
+
+#principal_claro_verde_2 .subcontenedor2_padre4{
+    width: 300px;
+    margin: 20px 0;
+}
+
+#principal_claro_verde_2 p[name="regresar a la pagina anterior"]{
+    text-align: center;
+    
+}
+
+#principal_claro_verde_2 a{
+    text-decoration: none;
+}
+
+#principal_claro_verde_2 .barra_verde h3{
+    color: white;
+}
+
+
+/* FIN DE LOS ESTILOS DE CLARO VERDE 2 */
+
+
+
+/* ESTILOS SECCIÓN REGISTRO */
+#principal_registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#principal_registro .contenedor_padre{
+    border-radius: 10px;
+    background-color: rgb(245, 115, 115);
+    padding: 1em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 100%;
+    width: 500px;
+}
+
+.contacto input, .contacto textarea{
+    width: 95%;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+#principal_registro .barra_roja{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px 0px;
+    
+}
+
+#principal_registro .barra_roja h3{
+    color: white;
+    font-family: 'Lora',sans-serif;
+}
+
+#principal_registro .contenedor_formulario h3{
+    text-align: center;
+}
+
+/* FIN DE LOS ESTILOS DE REGISTRO */
+
+
+/*--------------- INDEX MEDIA QUERYS -------------------*/
+@media only screen and (max-width:850px){
+    .contenedor_header{
+        justify-content: center;
+    }
+
+    #principal .contenedor_padre{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #principal .contenedor_hijo{
+        padding-top: 20px;
+    }
+
+  
+}
+
+@media only screen and (max-width:768px){
+    
+
+    #vidriera{
+        background-size: 100%;
+        min-height: 495px;
+    }
+
+    #vidriera .contenedor h2{
+        display: none;
+        
+    }
+
+    #newsletter .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 6em;
+    }
+
+    #newsletter h3{
+        text-align: center;
+    }
+
+    #principal .contenedor_padre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #principal .contenedor_hijo{
+        margin: 20px 0px;
+    }
+
+    #principal .contenedor_imagenes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #principal .contenedor_imagenes img{
+        margin: 10px 0px;
+    }
+
+    #footer .contenedor_padre{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 400px;
+    }
+
+    #logo_uade{
+        width: 250px;
+        height: 150px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /*------- FIN DE LOS MEDIA QUERYS DEL INDEX -------*/
+
+
+    /* MEDIA QUERYS SECCIÓN SPONSORS */
+    #principal_sponsors .subcontenedor2_padre3{
+        margin: 20px 10px;
+    }
+
+    /* FIN DE LOS MEDIA QUERYS SPONSORS */
+
+
+    /* MEDIA QUERYS CLARO VERDE */
+    #principal_claro_verde .contenedor_hijo{
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    #principal_claro_verde .contenedor_hijo p{
+        padding: 0 10px;
+    }
+
+    #principal_claro_verde .contenedor_padre3{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #principal_claro_verde .subcontenedor_padre3{
+        padding-left: 6.5px;
+        margin-bottom: 10px;
+    }
+
+    /* FIN DE LOS MEDIA QUERYS DE CLARO VERDE */
+
+
+
+    /* MEDIA QUERYS SECCIÓN CLARO VERDE 2 */
+
+    #principal_claro_verde_2 .contenedor_padre{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        padding: 0 30px;
+    }
+
+    #principal_claro_verde_2 .contenedor_padre2{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #principal_claro_verde_2 .subcontenedor2_padre3{
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+    
+    #principal_claro_verde_2 .contenedor_padre4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    
+    }
+
+    /* FIN DE LOS MEDIA QUERYS DE CLARO VERDE 2 */
+
+
+    /* MEDIA QUERYS DE REGISTRO */
+    #principal_registro .contenedor_padre{
+        border-radius: 10px;
+        background-color: rgb(245, 115, 115);
+        padding: 1em;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        height: 100%;
+        width: 300px;
+    }
+
+    /* FIN DE LOS MEDIA QUERYS DE REGISTRO */
+
+
+/* MEDIA QUERYS DEL MENU */
+    @media (max-width: 700px){
+        .nav_label{
+            display: block;
+            cursor: pointer;
+        }
+
+        .nav_menu{
+            position: fixed;
+            top: 80px;
+            bottom: 0;
+            background: tomato;
+            width: 100%;
+            left: 0;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            clip-path: circle(0 at center);
+            transition: clip-path 1s ease-in-out;
+        }
+
+        .nav_input:checked + .nav_menu{
+            clip-path: circle(100% at center);
+        }
+    }
+    /*------- FIN DE LOS MEDIA QUERYS DEL MENU -------*/
+
+    
+    
+}
+
+
+
+
+
+
