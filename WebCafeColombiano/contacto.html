@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ETIQUETAS META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Café, Diseño web,Marca Juan Valdez, recetas con café, historia del café, UADE">
+    <meta name="description" content="Sitio web sobre las mejores marcas de café en Colombia, presentado como segundo parcial de la asignatura Diseño y Desarrollo Web">
+    
+    <!-- ETIQUETAS LINK -->
+    <link rel="stylesheet" href="estilos_web.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="Imagenes/favicon_cafe.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/23520c328a.js" crossorigin="anonymous"></script>
+
+    <title>Lo mejor del café colombiano</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor_header">
+            <div id="logo">
+                <h1>Lo mejor del <span class="resaltado"> café colombiano</span> <img src="Imagenes/Granos de cafe.png" alt="Granos de café"></h1>
+                
+            </div>
+
+            <div id="menu">
+                <nav>
+                    <div><a href="index.html">Inicio</a></div>
+                    <div><a href="somos.html">Somos</a></div>
+                    <div><a href="ideas.html">Ideas</a></div>
+                    <div><a href="contacto.html" class="resaltado">Contacto</a></div>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="vidriera_contacto">
+        <div class="contenedor">
+            <h2>¡VEN A COLOMBIA!</h2>
+            <p>Y pruébalo por ti mismo</p>
+                        
+        </div>
+    </section>
+
+    
+    <section id="contacto">
+        <div class="contenedor_padre">
+            <div class="contenedor_hijo">
+                <article>
+                    <h3 style="text-align: center;">¿A dónde llegar?</h3>
+                    <br>
+                    <p>Para comenzar con tu viaje, te recomendamos que llegues a la ciudad de Bogotá; la enorme y hermosa capital de Colombia. La misma se encuentra dentro de la región del Eje Cafetero.</p>
+                    <br>
+                    <p>Es importante que consideres adquirir un paquete turístico en la agencia de turismo de tu preferencia, para que cuentes con la orientación y seguridad de un guía turístico calificado. </p>
+    
+                    <p name="formulario">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509016.5836085218!2d-74.43752699537765!3d4.648905572692291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sar!4v1699873961213!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p>
+                    <p>
+                        <a class="weatherwidget-io" href="https://forecast7.com/es/4d71n74d07/bogota/" data-label_1="BOGOTÁ" data-label_2="Clima" data-theme="desert" data-basecolor="#8C5954" data-textcolor="#F2C185" data-highcolor="#F2EBD5" data-lowcolor="#3B3440" >BOGOTÁ Clima</a>
+
+                    </p>
+                </article>
+            </div>
+
+            <aside>
+                <div class="contenedor_formulario">
+                    <h3>¿Necesitas ayuda? ¡Contáctanos!</h3>
+                    <br>
+                    <form action="envio.php" method="post" class="contacto">
+                        <div>
+                            <label for="nombre">Nombre y Apellido</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+                        </div>
+                        <div>
+                            <label for="correo">E-mail</label>
+                            <input type="email" name="email" id="correo" placeholder="Tu correo">
+                        </div>
+                        <div>
+                            <label for="msn">Mensaje</label>
+                            <textarea name="mensaje" id="msn" cols="30" rows="10" placeholder="Escribenos un mensaje"></textarea>
+                            <button type="submit" class="btn">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+        </div>
+        
+    </section>
+
+    <footer id="footer">
+        <div class="contenedor_padre">
+            <div>
+                <address>
+                    <h5>Creado por: </h5>
+                    <br>
+                    <p>- Andrés Felipe Méndez Florez</p>
+                    <p>- UADE</p>
+                    <p>- Tec. en Desarrollo de Software</p>
+                    <p>- Diseño y Desarrollo Web</p>
+                    <p>- Tipografía: Lora Regular 400</p>
+                </address>
+
+            </div>
+
+            <div id="conteItemsCarrusel">
+                
+                <div class="itemCarrusel" id="itemCarrusel1">
+                    <div class="tarjetaCarrusel" id="tarjeta_1">
+                        <h5>Paleta de colores</h5>
+                        <br>
+                        <p>#8C5954</p>
+
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel5">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrusel2">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="itemCarrusel" id="itemCarrusel2">
+                    <div class="tarjetaCarrusel" id="tarjeta_2">
+                        <h5>Paleta de colores</h5>
+                        <br>
+                        <p>#BF8F73</p>
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel1">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrusel3">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="itemCarrusel" id="itemCarrusel3">
+                    <div class="tarjetaCarrusel" id="tarjeta_3">
+                        <h5>Paleta de colores</h5>
+                        <br>
+                        <p>#F2C185</p>
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel2">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrusel4">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="itemCarrusel" id="itemCarrusel4">
+                    <div class="tarjetaCarrusel" id="tarjeta_4">
+                        <h5>Paleta de colores</h5>
+                        <br>
+                        <p>#F2EBD5</p>
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel3">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrusel5">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="itemCarrusel" id="itemCarrusel5">
+                    <div class="tarjetaCarrusel" id="tarjeta_5">
+                        <h5>Paleta de colores</h5>
+                        <br>
+                        <p>#3B3440</p>
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel4">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrusel1">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="redes_sociales">
+                <a href="https://m.facebook.com/login/?locale=es_ES" target="_blank">
+                    <figure>
+                        <img src="Imagenes/Redes Sociales/facebook_logo.svg" alt="Logotipo de facebook que sirve como link a esa pagina">
+                    </figure>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    <figure>
+                        <img src="Imagenes/Redes Sociales/instagram_logo.svg" alt="Logotipo de instagram que sirve como link a esa pagina">
+                    </figure>
+                </a>
+
+                <a href="https://twitter.com/" target="_blank">
+                    <figure>
+                        <img src="Imagenes/Redes Sociales/x-twitter_logo.svg" alt="Logotipo de X (anteriormente twitter) que sirve como link a esa pagina">
+                    </figure>
+                </a>
+
+                <a href="https://github.com/" target="_blank">
+                    <figure>
+                        <img src="Imagenes/Redes Sociales/github_logo.svg" alt="Logotipo de github que sirve como link a esa pagina">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body> 
+<script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+</html>
